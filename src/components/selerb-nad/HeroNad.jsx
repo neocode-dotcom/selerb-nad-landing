@@ -9,7 +9,7 @@ const HeroNad = ({ onBuyClick }) => {
   };
 
   return (
-    <div className="relative bg-black overflow-hidden min-h-screen flex items-center">
+    <div className="relative bg-black overflow-hidden min-h-[calc(100vh-64px)] flex items-center">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-950 to-black"></div>
         <div className="absolute inset-0 opacity-20">
