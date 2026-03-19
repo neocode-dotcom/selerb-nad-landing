@@ -58,7 +58,7 @@ export default function ShopifyBuyButton({
       }
 
       const checkoutUrl = data.cartCreate.cart.checkoutUrl;
-      window.location.href = checkoutUrl;
+      window.open(checkoutUrl, '_self');
       
       setAdded(true);
       if (onAddedToCart) onAddedToCart();
@@ -66,7 +66,7 @@ export default function ShopifyBuyButton({
       setTimeout(() => setAdded(false), 2000);
     } catch (error) {
       console.error('Error adding to cart:', error);
-      window.location.href = `https://${SHOPIFY_DOMAIN}/checkout`;
+      window.open(`https://${SHOPIFY_DOMAIN}/checkout`, '_self');
     } finally {
       setLoading(false);
     }

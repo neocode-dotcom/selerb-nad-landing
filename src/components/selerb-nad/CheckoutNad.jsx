@@ -6,12 +6,12 @@ const CheckoutNad = () => {
   const [timeLeft, setTimeLeft] = useState({ minutes: 14, seconds: 59 });
   const [stock] = useState(7);
 
-  const CURRENT_PRICE = 45.99;
-  const COMPARE_PRICE = 59.99;
+  const CURRENT_PRICE = 29.99;
+  const COMPARE_PRICE = 39.99;
   const DISCOUNT = Math.round((1 - CURRENT_PRICE / COMPARE_PRICE) * 100);
   const totalPrice = (CURRENT_PRICE * quantity).toFixed(2);
 
-  const VARIANT_ID = import.meta.env.VITE_SELERB_NAD_VARIANT_ID || 'gid://shopify/ProductVariant/00000000000000';
+  const VARIANT_ID = import.meta.env.VITE_SHOPIFY_VARIANT_ID || 'gid://shopify/ProductVariant/00000000000000';
 
   useEffect(() => {
     const timer = setInterval(() => {
