@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
-            <img src={logo} alt="Selerb NAD+" className="h-12 w-auto mb-4" />
+            <img src={logo} alt="Selerb NAD+" className="h-10 w-auto mb-4" />
             <p className="text-gray-400 max-w-md">
               La fórmula más avanzada para hombres que exigen rendimiento real. 
               1000mg de potencia celular para recuperar tu vitalidad.
