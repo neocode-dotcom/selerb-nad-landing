@@ -87,9 +87,9 @@ const FAQNad = () => {
 
         <div className="mt-12 text-center">
           <p className="text-gray-600 mb-4">¿Aún tienes dudas?</p>
-          <button className="text-blue-600 font-semibold hover:underline">
+          <a href="https://wa.link/ltkcs1" target="_blank" rel="noopener noreferrer" className="text-blue-600 font-semibold hover:underline">
             Chatea con nosotros →
-          </button>
+          </a>
         </div>
       </div>
     </div>
